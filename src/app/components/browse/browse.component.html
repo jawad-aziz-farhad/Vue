@@ -1,0 +1,386 @@
+<div class="browse-content">
+            <nav class="p1">
+                <div class="container">
+                    <div class="navbar-header logo">
+                        <a class="navbar-brand p0" href="#"><img class="img-responsive" src="assets/images/logo.png" /></a>
+                    </div>
+                    <div class="no_bg">
+                        <ul class="nav navbar-nav navbar-inverse c_nav1">
+                            <li class="active"><a href="#" class="browse">BROWSE</a></li>
+                            <li><a href="#" class="genres">GENRES</a></li>
+                            <li><a href="#" class="year">YEAR</a></li>
+                            <li><a href="#">NEW</a></li>
+                            <li><a href="#">POPULAR</a></li>
+                            <li><a href="#">FAVORITES</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right c_nav2">
+                            <li><a class="p0 text-right" href="#"><strong>SATURDAY, 10:24AM</strong><br/><span>APRIL 1, 2018</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div >  
+                <div id="re" class="container">
+                    <div class="sidebar-at-left" id="main">
+                        <div id="sidebar">
+                            <div class="vertical-menu">
+                                <h3 class=" heading_v">GENRES</h3>
+                                <a href="#">All</a>
+                                <a href="#" class="active">Action</a>
+                                <a href="#">Adventure</a>
+                                <a href="#">Animation</a>
+                                <a href="#">Biography</a>
+                                <a href="#">Comedy</a>
+                                <a href="#">Crime</a>
+                                <a href="#">Documentary</a>
+                                <a href="#">Drama</a>
+                                <a href="#">Fantasy</a>
+                                <a href="#">Family</a>
+                                <a href="#">History</a>
+                                <a href="#">Horror</a>
+                                <a href="#">Music</a>
+                                <a href="#">Musical</a>
+                                <a href="#">Mystery</a>
+                                <a href="#">Romance</a>
+                                <a href="#">Mystery</a>
+                                <a href="#">Sci-Fi</a>
+                            </div>
+                        </div>
+                        <div id="sidebar2">
+                            <div class="vertical-menu">
+                                <h3 class=" heading_v">YEAR</h3>
+                                <a href="#" class="active">2018</a>
+                                <a href="#">2017</a>
+                                <a href="#">2016</a>
+                                <a href="#">2015</a>
+                                <a href="#">2014</a>
+                                <a href="#">2013</a>
+                                <a href="#">2012</a>
+                                <a href="#">2011</a>
+                                <a href="#">2010</a>
+                                <a href="#">2009</a>
+                                <a href="#">2008</a>
+                                <a href="#">2007</a>
+                                <a href="#">2006</a>
+                                <a href="#">2005</a>
+                                <a href="#">2004</a>
+                                <a href="#">2003</a>
+                                <a href="#">2002</a>
+                                <a href="#">2001</a>
+                                <a href="#">2000</a>
+                                <a href="#">1999</a>
+                            </div>
+                        </div>
+                        <div id="content">
+
+                            <data [items]="movies | async"></data>
+
+                            <!--<div class="col-sm-2" *ngFor="let movie of movies; let i=index;">
+                                <article class="col-item">
+                                    <div class="options">
+                                        <button class="">
+                                            NEW
+                                        </button>
+                                    </div>
+                                    <div class="photo">
+                                        <a href="#"> <img [src]="movie.images.banner" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">{{ movie.title }}</h1>
+                                                <p class="text-left">{{ movie.year }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>-->
+
+                            <!--<div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie2.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Pacific Rim: U...</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie3.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Rampage</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div><div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie4.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Alpha</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie5.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Jurassic Worl...</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie6.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">The Equalizer II</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie1.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Tomb Raider</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie2.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Pacific Rim: U...</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie3.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Rampage</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie4.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Alpha</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie5.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Jurassic Worl...</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie6.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">The Equalizer II</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie1.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Tomb Raider</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie2.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Pacific Rim: U...</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie3.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Rampage</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie4.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Alpha</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie5.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">Jurassic Worl...</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-2">
+                                <article class="col-item">
+                                    <div class="photo">
+                                        <a href="#"> <img src="assets/images/movie6.jpg" class="img-responsive" alt="Product Image"> </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="details col-md-12">
+                                                <h1 class="title">The Equalizer II</h1>
+                                                <p class="text-left">2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>-->
+                        </div>
+
+                        <div class="clearer">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $(".browse").click(function () {
+                    $('#main').removeClass('use-sidebar2');
+                    $('#main').removeClass('use-sidebar1');
+                });
+                $(".genres").click(function () {
+                    $('#main').removeClass('use-sidebar2');
+                    $('#main').toggleClass('use-sidebar'); // Toggle
+                });
+                $(".year").click(function () {
+                    $('#main').removeClass('use-sidebar');
+                    $('#main').toggleClass('use-sidebar2'); // Toggle
+                });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.c_nav1 li').click(function () {
+                    $('li').removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+        </script>

@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+[data-slides] {
+    background-image: url('/assets/uploads/homeslide1.jpg'); /* Default image. */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    transition: background-image 1s linear;
+}
+
+/* Use additional CSS to control the `height` of `[data-slides]`, like so: */
+
+.test { min-height: 750px; }
+.home-cat{
+    position: fixed;
+   bottom: 58px;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.home-cat li{
+
+    list-style: none;
+}
+.home-cat li.main-red{
+list-style: none;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+border-bottom: 2px solid #fff;
+font-family: 'Arimo', sans-serif;
+transition:0.4s;
+
+}
+.home-cat li.main-red:hover{
+color: #ea0c0a;
+border-bottom: 2px solid #ea0c0a;
+transition:0.4s;
+}
+.owl-item{
+    margin: 0 !important;
+}
+.owl-carousel .owl-stage-outer {
+
+    overflow: visible;
+}
+.main-red .hidden-list{
+
+    display: none;
+    position: absolute;
+    top: -26px;
+overflow: visible;
+width: 100%;
+}
+.main-red:hover .hidden-list{
+
+    display: block; 
+
+}
+.movie-sect{
+width: 1000px;
+position: absolute;
+top: -213px;
+left: -267px;
+text-align: left;
+}
+.movie-sect h2{
+
+    text-align: left;
+    color: #fff;
+}
+.movie-thumhid{
+width: 124px;
+display: inline-block;
+margin-right: 10px;
+
+}
+
+@media all and (min-width: 48em) {
+    .test { height: 320px; }
+}

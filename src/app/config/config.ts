@@ -1,0 +1,1 @@
+export let SERVER_URL = "https://tv-v2.api-fetch.website/";

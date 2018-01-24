@@ -1,0 +1,24 @@
+<div class="col-sm-2" *ngFor="let item of items; let i=index;">
+  <article class="col-item">
+      <div class="options">
+          <button class="">
+              NEW
+          </button>
+      </div>
+      <div class="photo">
+          <a href="#"> 
+            <!--<img [src]="item.images.banner" class="img-responsive" alt="{{ item.title }}"> -->
+            <image [src]="item.images.banner" [alt]="item.title" [default]="defulatImg"></image>
+          </a>
+      </div>
+      <div class="info">
+          <div class="row">
+              <div class="details col-md-12">
+                  <h1 class="title">{{ item.title }}</h1>
+                  <p class="text-left">{{ item.year }}</p>
+              </div>
+          </div>
+      </div>
+  </article>
+</div>
+
