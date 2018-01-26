@@ -359,28 +359,3 @@
                 </div>
             </div>
         </div>
-        <script>
-            $(document).ready(function () {
-                $(".browse").click(function () {
-                    $('#main').removeClass('use-sidebar2');
-                    $('#main').removeClass('use-sidebar1');
-                });
-                $(".genres").click(function () {
-                    $('#main').removeClass('use-sidebar2');
-                    $('#main').toggleClass('use-sidebar'); // Toggle
-                });
-                $(".year").click(function () {
-                    $('#main').removeClass('use-sidebar');
-                    $('#main').toggleClass('use-sidebar2'); // Toggle
-                });
-
-            });
-        </script>
-        <script>
-            $(document).ready(function () {
-                $('.c_nav1 li').click(function () {
-                    $('li').removeClass("active");
-                    $(this).addClass("active");
-                });
-            });
-        </script>

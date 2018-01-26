@@ -12,5 +12,6 @@ export class DataComponent  {
 
   constructor() { 
     this.defulatImg = "assets/images/banner-placeholder.png";
+    console.log('DATA: \n' + JSON.stringify(this.items));
   }
 }

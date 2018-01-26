@@ -18,14 +18,15 @@ import { AnimesComponent } from './components/animes/animes.component';
 import { SettingsComponent } from './components/settings/settings.component';
 
 /* SERVICES */
-import { OperationsService } from './services';
+import { OperationsService , TimeService } from './services';
+import { CommonComponent } from './components/common/common.component';
 
 const appRoute: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     { path:'home', component: HomeComponent},
     { path:'movies', component: MoviesComponent},
     { path:'selected', component: SelectedItemComponent},
-    { path:'browse', component: BrowseComponent},
+    { path:'browse/:value', component: CommonComponent},
     { path:'genres', component: GenresComponent},
     { path:'liveTV', component: LiveTvComponent},
     { path: 'favourites', component: FavouritesComponent},
@@ -45,14 +46,15 @@ const appRoute: Routes = [
     LiveTvComponent,
     FavouritesComponent,
     AnimesComponent,
-    SettingsComponent
+    SettingsComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(appRoute)
   ],
-  providers: [OperationsService],
+  providers: [OperationsService, TimeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
